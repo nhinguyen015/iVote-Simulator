@@ -4,6 +4,9 @@ Assignment 1 of CS3560 | Object Oriented Programming course
 ## Description
 This is a Java-based simulation tool based on the live poll idea similar to the software used during the class. This is going to be a pure desktop-based console program, WITHOUT web interactions or graphical UIs required.
 
+## Output Screenshot Example
+![image](https://user-images.githubusercontent.com/29805751/192982339-c7d3ce18-2280-48df-a165-e80b801c704f.png)
+
 ## Basic functions
 * [x] Configure the question types and candidate answers. 
   * Should support 2 types of questions: multiple-choice question (more than one choice can be chosen including
