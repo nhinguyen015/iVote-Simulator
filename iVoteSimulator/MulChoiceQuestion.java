@@ -4,9 +4,11 @@
  *  Purpose: Display multiple choice question for student to choose from
  */
 
+package iVoteSimulator;
+
 import java.util.ArrayList;
 
-public class MulChoiceQuestion implements Display {
+public class MulChoiceQuestion implements Question {
     private String mulQ;
     private ArrayList<String> mulAns = new ArrayList<String>();
     private boolean isMultiChoice = true;
@@ -16,17 +18,17 @@ public class MulChoiceQuestion implements Display {
         this.mulAns = answers;
     }
 
-    public String getQuestion() {
-        return mulQ;
-    }
-
     public void setQuestion(String question) {
         this.mulQ = new String(question);
         
     }
 
-    public void setAnswer(ArrayList<String> answer) {
-        this.mulAns = answer;
+    public String getQuestion() {
+        return mulQ;
+    }
+
+    public void setAnswer(ArrayList<String> answers) {
+        this.mulAns = answers;
     }
 
     public ArrayList<String> getAnswer() {
@@ -36,6 +38,4 @@ public class MulChoiceQuestion implements Display {
     public boolean isMultiChoice() {
         return isMultiChoice;
     }
-    
-    
 }

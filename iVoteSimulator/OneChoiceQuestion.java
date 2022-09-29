@@ -4,9 +4,11 @@
  *  Purpose: Display single choice question for student to choose from
  */
 
+package iVoteSimulator;
+ 
 import java.util.ArrayList;
 
-public class OneChoiceQuestion implements Display {
+public class OneChoiceQuestion implements Question {
     private String oneQ;
     private ArrayList<String> oneAns;
     private boolean isMultiChoice = false;
@@ -16,12 +18,12 @@ public class OneChoiceQuestion implements Display {
         this.oneAns = answer;
     }
 
+    public void setQuestion(String question) {
+        this.oneQ = question;        
+    }
+
     public String getQuestion() {
         return oneQ;
-    }
-    
-    public void setQuestion(String question) {
-        this.oneQ = new String(question);        
     }
 
     public void setAnswer(ArrayList<String> answer) {
@@ -36,5 +38,4 @@ public class OneChoiceQuestion implements Display {
     public boolean isMultiChoice() {
         return isMultiChoice;
     }
-    
 }

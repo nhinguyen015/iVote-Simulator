@@ -4,10 +4,12 @@
  *  Purpose: Store student's ID and their answers to each student
  */
 
+package iVoteSimulator;
+ 
 import java.util.ArrayList;
 import java.util.HashMap;
 
- class Student {
+public class Student {
     private int id;
     // Hashmap storing the ID first and the list of answers as second
     HashMap<Integer, ArrayList<String>> studentAnswer = new HashMap<Integer, ArrayList<String>>();
